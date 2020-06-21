@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html , body { 
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    perspective : Es la distancia entre nuestro ojo y el monitor. No se hereda en mas de 1 nivel. 
+    */
+    perspective: 800px;
+}
+
+#rojo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*
+
+    transform: rotateX(50deg) translateY();
+
+    Recordar que los valores de una transformacion se ejecutan en orden de escritura por lo cual si primero roto un elemento, todos los ejes rotan con ese elemento entonces la traslación del mismo también va a cambiar relativa a su rotación.
+
+    */
+    transform: rotateX(50deg);
+    /*
+    
+    transform-style: preserve-3d;
+
+    En valor de preserve-3d hace que la perspectiva de un elemento se herede a sus hijos directos manteniendo el mismo espacio tridimencional con el que ya veniamos trabajando. Esta regla se usa cuando el elemento a maquetar está constituido por multiples caras. 
+
+    */
+    transform-style: preserve-3d;
+}
+
+#amarillo {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    transform: rotateY(50deg);
+}

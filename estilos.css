@@ -58,7 +58,7 @@ Establecer medidas en porcentaje hace que la misma se tenga que calcular en base
 
 /*Reglas de reseteo*/
 * {
-    margin: 0;
+    margin: 10;
     padding: 10;
     box-sizing: border-box;
     
